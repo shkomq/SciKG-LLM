@@ -1,0 +1,81 @@
+Neo4j is good to show knowledge graphs
+
+
+A Multilingual LLM Framework 
+--for Scientific Knowledge Graph Construction 
+--from Low-Resource Language Literature
+
+SciKG-LLM, a multilingual framework 
+--for scientific knowledge extraction and multilingual knowledge graph construction from low-resource scientific literature. 
+
+Kurdish Medical Corpus (KMC) dataset is preprocessed 
+--using Unicode Normalization, 
+--Scientific Text Cleaning, and 
+--Sliding Window Document Chunking 
+--to generate high-quality multilingual inputs.
+
+Ollama framework and performs Few-shot Chain-of-Thought Prompting 
+--for scientific triple extraction, 
+
+The extracted knowledge is semantically integrated 
+--using LaBSE-based Cross-Lingual Entity Alignment with Cosine Similarity Matching, 
+
+Neo4j Property Graph Construction 
+--to create a searchable multilingual scientific knowledge graph. 
+ 
+precision, 
+recall,
+F1-score, 
+entity alignment accuracy, and 
+knowledge graph quality metrics. 
+ 
+https://www.kaggle.com/datasets/shkoqader/kurdish-medical-corpus-kmc
+
+ 
+ KMC-Qwen-KG_triples.jsonl
+          │
+          ▼
+──────────────────────────────────────
+1. Data Loading
+──────────────────────────────────────
+          │
+          ▼
+──────────────────────────────────────
+2. Preprocessing
+   • Unicode Normalization
+   • Scientific Text Cleaning
+   • Sliding Window Chunking
+──────────────────────────────────────
+          │
+          ▼
+──────────────────────────────────────
+3. Ollama LLM
+   Few-shot CoT Prompting
+   Triple Extraction
+──────────────────────────────────────
+          │
+          ▼
+──────────────────────────────────────
+4. LaBSE Embedding
+   Cross-lingual Entity Alignment
+   Cosine Similarity
+──────────────────────────────────────
+          │
+          ▼
+──────────────────────────────────────
+5. Neo4j Graph Construction
+──────────────────────────────────────
+          │
+          ▼
+Scientific Knowledge Graph
+
+
+
+pip install pandas
+pip install sentence-transformers
+pip install neo4j
+pip install scikit-learn
+pip install transformers
+pip install ollama
+pip install regex
+pip install tqdm
